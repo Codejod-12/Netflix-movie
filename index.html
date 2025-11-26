@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Netflix Clone - Streaming Entertainment</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo">
+                    <span class="logo-text-1">NET</span><span class="logo-text-2">FLIX</span>
+                </div>
+                <nav>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#tv-shows">TV Shows</a></li>
+                        <li><a href="#movies">Movies</a></li>
+                        <li><a href="#new">New & Popular</a></li>
+                        <li><a href="#list">My List</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-icons">
+                <button class="icon-btn">🔍</button>
+                <button class="icon-btn">🔔</button>
+                <div class="profile-avatar"></div>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home">Home</a>
+            <a href="#tv-shows">TV Shows</a>
+            <a href="#movies">Movies</a>
+            <a href="#new">New & Popular</a>
+            <a href="#list">My List</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-overlay-1"></div>
+        <div class="hero-overlay-2"></div>
+        <div class="hero-overlay-3"></div>
+        
+        <div class="hero-content">
+            <div class="hero-content-inner">
+                <div class="hero-badge">New Release • Top Trending</div>
+                <h1 class="hero-title">Cinematic <span class="accent">Experience</span></h1>
+                <p class="hero-description">
+                    Immerse yourself in a world of stunning visuals, compelling stories, and unforgettable moments. Discover content that captivates, entertains, and inspires.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">▶ Play Now</button>
+                    <button class="btn btn-secondary">ℹ More Info</button>
+                </div>
+                <div class="featured-badge">
+                    <div class="featured-line"></div>
+                    <span class="featured-text">Featured Content</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll to explore</div>
+            <svg class="scroll-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- TRENDING NOW -->
+    <section class="content-section" id="trending">
+        <div class="section-header">
+            <h2 class="section-title">Trending Now</h2>
+            <p class="section-subtitle">Catch the hottest releases everyone's talking about</p>
+            <div class="title-divider"></div>
+        </div>
+        <div class="carousel-wrapper">
+            <div class="carousel" id="carousel1">
+                <div class="movie-card">
+                    <img src="/netflix image/champagne problems (2025).jpeg" alt="Cyberpunk Nights" class="movie-card-image">
+                    <div class="rating-badge">92%</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">Champagne problems (2025)</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">👍 92% • 2024</span>
+                                <span class="movie-category">Sci-Fi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="/netflix image/In your dream.jpeg" alt="Mystery Harbor" class="movie-card-image">
+                    <div class="rating-badge">88%</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">In Your Dreams</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">👍 88% • 2024</span>
+                                <span class="movie-category">Thriller</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="/netflix image/Frakestain.jpeg" alt="Ocean's Echo" class="movie-card-image">
+                    <div class="rating-badge">85%</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">Frankenstein 2025</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">👍 85% • 2024</span>
+                                <span class="movie-category">Adventure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="/netflix image/jolly 3.jpeg" alt="Urban Legends" class="movie-card-image">
+                    <div class="rating-badge">90%</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">Jolly LLB 3 (2025)</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">👍 90% • 2024</span>
+                                <span class="movie-category">Horror</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="netflix image/Karate kid legends.jpeg" alt="Electric Dreams" class="movie-card-image">
+                    <div class="rating-badge">87%</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">Karate Kid Legends</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">👍 87% • 2024</span>
+                                <span class="movie-category">Drama</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="/netflix image/Cars.jpeg" alt="Starlight Express" class="movie-card-image">
+                    <div class="rating-badge">89%</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">Cars</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">👍 89% • 2024</span>
+                                <span class="movie-category">Sci-Fi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-arrow left" onclick="scrollCarousel('carousel1', -400)">‹</button>
+            <button class="carousel-arrow right" onclick="scrollCarousel('carousel1', 400)">›</button>
+        </div>
+    </section>
+
+    <!-- POPULAR TV SHOWS -->
+    <section class="content-section" id="tv-shows">
+        <div class="section-header">
+            <h2 class="section-title">Popular TV Shows</h2>
+            <p class="section-subtitle">Binge-worthy series you won't want to miss</p>
+            <div class="title-divider"></div>
+        </div>
+        <div class="carousel-wrapper">
+            <div class="carousel" id="carousel2">
+                <div class="movie-card">
+                    <img src="/netflix image/The Beast In Me.jpeg" alt="Crown Tales" class="movie-card-image">
+                    <div class="rating-badge">94%</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">The Beast In Me</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">👍 94% • 2023</span>
+                                <span class="movie-category">Drama</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="/netflix image/Absentia.jpeg" alt="Detective's Secret" class="movie-card-image">
+                    <div class="rating-badge">91%</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">Absentia (2025)</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">👍 91% • 2024</span>
+                                <span class="movie-category">Mystery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="/netflix image/Stranger things.jpeg" alt="Love in Paris" class="movie-card-image">
+                    <div class="rating-badge">86%</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">Stranger Things</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">👍 86% • 2024</span>
+                                <span class="movie-category">Romance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="/netflix image/Raw.jpeg" alt="Futuristic World" class="movie-card-image">
+                    <div class="rating-badge">93%</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">Raw</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">👍 93% • 2024</span>
+                                <span class="movie-category">Sci-Fi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="/netflix image/Fast and Furious.jpeg" alt="Mountain Echo" class="movie-card-image">
+                    <div class="rating-badge">88%</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">Fast and furious</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">👍 88% • 2024</span>
+                                <span class="movie-category">Adventure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="/netflix image/jawan.jpeg" alt="City Pulse" class="movie-card-image">
+                    <div class="rating-badge">87%</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">Jawan</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">👍 87% • 2024</span>
+                                <span class="movie-category">Drama</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-arrow left" onclick="scrollCarousel('carousel2', -400)">‹</button>
+            <button class="carousel-arrow right" onclick="scrollCarousel('carousel2', 400)">›</button>
+        </div>
+    </section>
+
+
+    
+    <!-- POPULAR ANIME SHOWS -->
+    <section class="content-section" id="tv-shows">
+        <div class="section-header">
+            <h2 class="section-title">Popular ANIME Shows</h2>
+            <p class="section-subtitle">Very-worthy series you won't want to miss</p>
+            <div class="title-divider"></div>
+        </div>
+        <div class="carousel-wrapper">
+            <div class="carousel" id="carousel2">
+                <div class="movie-card">
+                    <img src="/netflix image/dbz.jpeg" alt="Crown Tales" class="movie-card-image">
+                    <div class="rating-badge">94%</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">Dragon Ball</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">👍 94% • 2023</span>
+                                <span class="movie-category">Drama</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="/netflix image/Naruto.jpeg" alt="Detective's Secret" class="movie-card-image">
+                    <div class="rating-badge">91%</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">Naruto Shipudden</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">👍 91% • 2024</span>
+                                <span class="movie-category">Mystery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="/netflix image/one puch man.jpeg" alt="Love in Paris" class="movie-card-image">
+                    <div class="rating-badge">86%</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">One punch man</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">👍 86% • 2024</span>
+                                <span class="movie-category">Romance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="/netflix image/demon slayer.jpeg" alt="Futuristic World" class="movie-card-image">
+                    <div class="rating-badge">93%</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">Demon Slayer</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">👍 93% • 2024</span>
+                                <span class="movie-category">Sci-Fi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="/netflix image/spy x family.jpeg" alt="Mountain Echo" class="movie-card-image">
+                    <div class="rating-badge">88%</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">Spy x Family</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">👍 88% • 2024</span>
+                                <span class="movie-category">Adventure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="/netflix image/one piece.jpeg" alt="City Pulse" class="movie-card-image">
+                    <div class="rating-badge">87%</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">One Piece</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">👍 87% • 2024</span>
+                                <span class="movie-category">Drama</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-arrow left" onclick="scrollCarousel('carousel2', -400)">‹</button>
+            <button class="carousel-arrow right" onclick="scrollCarousel('carousel2', 400)">›</button>
+        </div>
+    </section>
+
+    <!-- COMING SOON -->
+    <section class="content-section" id="coming">
+        <div class="section-header">
+            <h2 class="section-title">Coming Soon</h2>
+            <p class="section-subtitle">Mark your calendar for these exciting releases</p>
+            <div class="title-divider"></div>
+        </div>
+        <div class="carousel-wrapper">
+            <div class="carousel" id="carousel3">
+                <div class="movie-card">
+                    <img src="/netflix image/spider man across the spider verse.jpeg" alt="Quantum Realm" class="movie-card-image">
+                    <div class="rating-badge">—</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">Spider man across the spider verse</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">Coming 2025</span>
+                                <span class="movie-category">Sci-Fi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="/netflix image/avengers doomsday.jpeg" alt="Shadow Games" class="movie-card-image">
+                    <div class="rating-badge">—</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">Avengers doomsday</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">Coming 2025</span>
+                                <span class="movie-category">Thriller</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="/netflix image/avatar the way of water.jpeg" alt="Eternal Night" class="movie-card-image">
+                    <div class="rating-badge">—</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">Avatar the way of water</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">Coming 2025</span>
+                                <span class="movie-category">Horror</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="/netflix image/Angry birds 2.jpeg" alt="Desert Mirage" class="movie-card-image">
+                    <div class="rating-badge">—</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">Angry birds 2</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">Coming 2025</span>
+                                <span class="movie-category">Adventure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="netflix image/project hail marry.jpeg" alt="Crimson Tide" class="movie-card-image">
+                    <div class="rating-badge">—</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">Project hail marry</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">Coming 2025</span>
+                                <span class="movie-category">Drama</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="/netflix image/the mummy.jpeg" alt="Golden Hours" class="movie-card-image">
+                    <div class="rating-badge">—</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">The Mummy</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">Coming 2025</span>
+                                <span class="movie-category">Romance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-arrow left" onclick="scrollCarousel('carousel3', -400)">‹</button>
+            <button class="carousel-arrow right" onclick="scrollCarousel('carousel3', 400)">›</button>
+        </div>
+    </section>
+
+    <!-- RECOMMENDED FOR YOU -->
+    <section class="content-section" id="recommended">
+        <div class="section-header">
+            <h2 class="section-title">Recommended For You</h2>
+            <p class="section-subtitle">Based on your viewing preferences</p>
+            <div class="title-divider"></div>
+        </div>
+        <div class="carousel-wrapper">
+            <div class="carousel" id="carousel4">
+                <div class="movie-card">
+                    <img src="/netflix image/got.jpeg" alt="Neon Cities" class="movie-card-image">
+                    <div class="rating-badge">84%</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">Game Of Thrones</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">👍 84% • 2024</span>
+                                <span class="movie-category">Sci-Fi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="/netflix image/witcher.jpeg" alt="Silent Pursuit" class="movie-card-image">
+                    <div class="rating-badge">89%</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">The Witcher</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">👍 89% • 2024</span>
+                                <span class="movie-category">Thriller</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="/netflix image/breaking bad.jpeg" alt="Hidden Paradise" class="movie-card-image">
+                    <div class="rating-badge">82%</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">Breaking Bad</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">👍 82% • 2024</span>
+                                <span class="movie-category">Adventure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="/netflix image/interstellar.jpeg" alt="Midnight Memories" class="movie-card-image">
+                    <div class="rating-badge">91%</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">Interestellar</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">👍 91% • 2024</span>
+                                <span class="movie-category">Romance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="/netflix image/the batman.jpeg" alt="Steel Hearts" class="movie-card-image">
+                    <div class="rating-badge">86%</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">The Batman</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">👍 86% • 2024</span>
+                                <span class="movie-category">Action</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="/netflix image/rampage.jpeg" alt="Whisper Winds" class="movie-card-image">
+                    <div class="rating-badge">85%</div>
+                    <div class="movie-card-overlay">
+                        <div class="movie-card-top">
+                            <h3 class="movie-title">Rampage</h3>
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="movie-card-bottom">
+                            <button class="play-button">▶ Play</button>
+                            <div class="movie-info">
+                                <span class="movie-rating">👍 85% • 2024</span>
+                                <span class="movie-category">Drama</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-arrow left" onclick="scrollCarousel('carousel4', -400)">‹</button>
+            <button class="carousel-arrow right" onclick="scrollCarousel('carousel4', 400)">›</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-icons">
+                <button class="social-btn">f</button>
+                <button class="social-btn">📷</button>
+                <button class="social-btn">𝕏</button>
+                <button class="social-btn">in</button>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#press">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Content</h4>
+                    <ul>
+                        <li><a href="#movies">Movies</a></li>
+                        <li><a href="#shows">TV Shows</a></li>
+                        <li><a href="#originals">Originals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#help">Help Center</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms & Conditions</a></li>
+                        <li><a href="#cookies">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2024 Netflix Clone. All rights reserved. Made By Shobuj</p>
+                <div class="footer-language">
+                    <button class="footer-lang-btn">English</button>
+                    <button class="footer-lang-btn">Help Center</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <script src="script.js"></script>
+
+
+    <style>
+        .preloader-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #141414;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        .preloader-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+        }
+
+        .glow-background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 320px;
+            height: 320px;
+            background-color: #e50914;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.3;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            z-index: 1;
+        }
+
+        .netflix-logo {
+            font-size: 200px;
+            font-weight: 900;
+            color: #e50914;
+            filter: drop-shadow(0 20px 25px rgba(0, 0, 0, 0.3));
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            line-height: 1;
+            letter-spacing: -0.05em;
+            position: relative;
+            z-index: 10;
+        }
+
+        .loading-dots {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 10;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            background-color: #e50914;
+            border-radius: 50%;
+            animation: bounce 1s infinite;
+        }
+
+        .dot:nth-child(1) {
+            animation-delay: 0ms;
+        }
+
+        .dot:nth-child(2) {
+            animation-delay: 100ms;
+        }
+
+        .dot:nth-child(3) {
+            animation-delay: 200ms;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.8;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .netflix-logo {
+                font-size: 120px;
+            }
+
+            .glow-background {
+                width: 240px;
+                height: 240px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .netflix-logo {
+                font-size: 80px;
+            }
+
+            .glow-background {
+                width: 160px;
+                height: 160px;
+            }
+        }
+    </style>
+
+    <div class="preloader-container">
+        <div class="glow-background"></div>
+        <div class="preloader-content">
+            <div class="netflix-logo">N</div>
+            <div class="loading-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Auto-hide preloader after 3 seconds
+        setTimeout(() => {
+            const preloader = document.querySelector('.preloader-container');
+            preloader.style.display = 'none';
+        }, 3000);
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
